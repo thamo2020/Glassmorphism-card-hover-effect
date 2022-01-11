@@ -72,6 +72,7 @@ section::after {
 }
 .container .card:hover .content {
     opacity: 1;
+    transform: translateY(-20px);
 }
 .container .card .content .imgBx {
     position: relative;
@@ -112,7 +113,7 @@ section::after {
 
 .container .card .sci {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     display: flex;
 }
 
@@ -121,6 +122,11 @@ section::after {
     margin: 0 10px;
     transform: translateY(40px);
     transition: 0.5s;
+    transition-delay: calc(0.1s* var(--i));
+}
+
+.container .card:hover .sci li{
+    transform: translateY(0px);
 }
 .container .card .sci li a {
     color: white;
